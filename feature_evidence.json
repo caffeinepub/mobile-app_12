@@ -1,0 +1,190 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-product-catalog-page-displaying-products-with-images-names-prices-and-stock-status-in-a-mobile-optimized-grid-layout",
+      "featureTitle": "Create a product catalog page displaying products with images, names, prices, and stock status in a mobile-optimized grid layout",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ProductCard.tsx",
+        "frontend/src/pages/ProductCatalogPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-product-detail-page-showing-full-product-information-larger-image-description-and-quantity-selector",
+      "featureTitle": "Create product detail page showing full product information, larger image, description, and quantity selector",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ProductCard.tsx",
+        "frontend/src/components/QuantitySelector.tsx",
+        "frontend/src/pages/ProductDetailPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-shopping-cart-functionality-allowing-users-to-add-products-adjust-quantities-and-view-cart-total",
+      "featureTitle": "Implement shopping cart functionality allowing users to add products, adjust quantities, and view cart total",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/CartItem.tsx",
+        "frontend/src/pages/CartPage.tsx",
+        "frontend/src/pages/ProductDetailPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-checkout-flow-allowing-users-to-review-cart-enter-shipping-information-and-place-orders",
+      "featureTitle": "Build checkout flow allowing users to review cart, enter shipping information, and place orders",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ShippingForm.tsx",
+        "frontend/src/pages/CartPage.tsx",
+        "frontend/src/pages/CheckoutPage.tsx",
+        "frontend/src/pages/OrderConfirmationPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-order-history-page-displaying-past-orders-with-order-details-status-and-items-purchased",
+      "featureTitle": "Create order history page displaying past orders with order details, status, and items purchased",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/OrderCard.tsx",
+        "frontend/src/components/OrderStatusBadge.tsx",
+        "frontend/src/pages/OrderDetailPage.tsx",
+        "frontend/src/pages/OrderHistoryPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-product-search-and-category-filtering-to-help-users-find-products-quickly",
+      "featureTitle": "Implement product search and category filtering to help users find products quickly",
+      "files": [
+        "frontend/src/components/CategoryFilter.tsx",
+        "frontend/src/components/SearchBar.tsx",
+        "frontend/src/pages/ProductCatalogPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-inventory-management-capability-for-resellers-to-track-stock-levels-and-receive-low-stock-alerts",
+      "featureTitle": "Add inventory management capability for resellers to track stock levels and receive low-stock alerts",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ProductCard.tsx",
+        "frontend/src/components/StockIndicator.tsx",
+        "frontend/src/pages/InventoryDashboardPage.tsx",
+        "frontend/src/pages/ProductDetailPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-render-generated-product-images-as-static-assets-in-the-frontend-public-directory",
+      "featureTitle": "Render generated product images as static assets in the frontend public directory",
+      "files": [
+        "frontend/src/components/ProductCard.tsx",
+        "frontend/src/components/ProductImage.tsx",
+        "frontend/src/pages/ProductDetailPage.tsx",
+        "frontend/src/utils/imageHelpers.ts"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

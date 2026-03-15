@@ -1,0 +1,189 @@
+{
+  "kind": "build_request",
+  "title": "Build e-commerce reseller application with product catalog and order management",
+  "projectName": "Reseller Hub",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-4",
+      "text": "Create a product catalog page displaying products with images, names, prices, and stock status in a mobile-optimized grid layout",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-ecommerce-request"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Products display in a responsive grid on mobile and tablet devices",
+        "Each product card shows image, name, price, and availability status",
+        "Grid layout adapts to different screen sizes"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Implement backend data model for products including id, name, description, price, stock quantity, category, and image reference",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-ecommerce-request"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Product type is defined with all required fields",
+        "Products can be stored and retrieved from stable storage",
+        "Query methods exist for listing all products and retrieving individual products"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create product detail page showing full product information, larger image, description, and quantity selector",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-ecommerce-request"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can tap a product from the catalog to view details",
+        "Detail page displays full product description and specifications",
+        "Quantity selector allows users to choose purchase quantity"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Implement shopping cart functionality allowing users to add products, adjust quantities, and view cart total",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-ecommerce-request"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can add products to cart from product detail page",
+        "Cart persists items and quantities during session",
+        "Cart displays running total of all items",
+        "Users can modify quantities or remove items from cart"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Create order management system in backend to store orders with customer information, ordered items, quantities, total amount, and order status",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-ecommerce-request"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Order type includes customer details, line items, total, timestamp, and status",
+        "Orders are stored in stable storage",
+        "Methods exist to create new orders and retrieve order history",
+        "Order status can be tracked (pending, confirmed, shipped, delivered)"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Build checkout flow allowing users to review cart, enter shipping information, and place orders",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-ecommerce-request"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Checkout page displays cart summary with all items and total",
+        "Form collects shipping name, address, phone number",
+        "Users can confirm and submit orders",
+        "Order confirmation is displayed after successful submission"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Create order history page displaying past orders with order details, status, and items purchased",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-ecommerce-request"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can view list of their previous orders",
+        "Each order shows date, status, total amount",
+        "Users can tap to view detailed order information",
+        "Order status is clearly indicated with visual indicators"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Implement product search and category filtering to help users find products quickly",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-ecommerce-request"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Search bar allows text-based product search",
+        "Category filters narrow product listings",
+        "Search and filter results update catalog display in real-time",
+        "Backend provides efficient query methods for search and filtering"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Add inventory management capability for resellers to track stock levels and receive low-stock alerts",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-ecommerce-request"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Stock quantity decrements when orders are placed",
+        "Out-of-stock products are clearly marked and cannot be ordered",
+        "Dashboard shows current inventory levels",
+        "Visual indicators highlight low-stock products"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Render generated product images as static assets in the frontend public directory",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-ecommerce-request"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images are placed in frontend/public/assets/generated",
+        "Product catalog and detail pages reference images from static assets",
+        "Images load correctly on all device sizes"
+      ]
+    }
+  ],
+  "constraints": [
+    "Respect single-actor architecture for all Motoko backend logic",
+    "Do not modify immutable frontend paths (hooks/useInternetIdentity, hooks/useActor, main.tsx, components/ui)",
+    "Use only React, Tailwind CSS, Shadcn, and React Query for frontend implementation"
+  ],
+  "nonGoals": [
+    "Payment processing integration (Stripe or other payment gateways)",
+    "Third-party shipping API integration",
+    "Admin dashboard for product management",
+    "Multi-vendor marketplace functionality",
+    "Real-time inventory synchronization with external systems",
+    "Email notifications for orders"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Modern e-commerce hero banner showing shopping concept with clean geometric shapes (hero-banner.dim_1200x400.png)",
+      "Sample product image for electronics category - smartphone (product-phone.dim_400x400.png)",
+      "Sample product image for electronics category - laptop (product-laptop.dim_400x400.png)",
+      "Sample product image for accessories category - headphones (product-headphones.dim_400x400.png)",
+      "Sample product image for accessories category - smartwatch (product-watch.dim_400x400.png)",
+      "Shopping cart icon illustration in minimalist style (cart-icon.dim_128x128.png)",
+      "Order confirmation checkmark icon (order-success.dim_128x128.png)"
+    ],
+    "edits": []
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-23T16:24:41.030Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 10,
+    "implemented": 8,
+    "items": [
+      {
+        "id": "REQ-10",
+        "summary": "Create order history page displaying past orders with order details, status, and items purchased",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/hooks/useOrders.ts",
+          "frontend/src/components/OrderStatusBadge.tsx",
+          "frontend/src/components/OrderCard.tsx",
+          "frontend/src/pages/OrderHistoryPage.tsx",
+          "frontend/src/pages/OrderDetailPage.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/OrderStatusBadge.tsx",
+          "frontend/src/components/OrderCard.tsx",
+          "frontend/src/pages/OrderHistoryPage.tsx",
+          "frontend/src/pages/OrderDetailPage.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-11",
+        "summary": "Implement product search and category filtering to help users find products quickly",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/hooks/useProductSearch.ts",
+          "frontend/src/hooks/useProductsByCategory.ts",
+          "frontend/src/components/SearchBar.tsx",
+          "frontend/src/components/CategoryFilter.tsx",
+          "frontend/src/pages/ProductCatalogPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/SearchBar.tsx",
+          "frontend/src/components/CategoryFilter.tsx",
+          "frontend/src/pages/ProductCatalogPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-12",
+        "summary": "Add inventory management capability for resellers to track stock levels and receive low-stock alerts",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/hooks/useLowStockProducts.ts",
+          "frontend/src/components/StockIndicator.tsx",
+          "frontend/src/pages/InventoryDashboardPage.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/components/ProductCard.tsx",
+          "frontend/src/pages/ProductDetailPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/StockIndicator.tsx",
+          "frontend/src/pages/InventoryDashboardPage.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/components/ProductCard.tsx",
+          "frontend/src/pages/ProductDetailPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-13",
+        "summary": "Render generated product images as static assets in the frontend public directory",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/utils/imageHelpers.ts",
+          "frontend/src/components/ProductImage.tsx",
+          "frontend/src/components/ProductCard.tsx",
+          "frontend/src/pages/ProductDetailPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/utils/imageHelpers.ts",
+          "frontend/src/components/ProductImage.tsx",
+          "frontend/src/components/ProductCard.tsx",
+          "frontend/src/pages/ProductDetailPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Create a product catalog page displaying products with images, names, prices, and stock status in a mobile-optimized grid layout",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/hooks/useProducts.ts",
+          "frontend/src/components/ProductCard.tsx",
+          "frontend/src/pages/ProductCatalogPage.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ProductCard.tsx",
+          "frontend/src/pages/ProductCatalogPage.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Implement backend data model for products including id, name, description, price, stock quantity, category, and image reference",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Create product detail page showing full product information, larger image, description, and quantity selector",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/hooks/useProduct.ts",
+          "frontend/src/components/QuantitySelector.tsx",
+          "frontend/src/pages/ProductDetailPage.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/components/ProductCard.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/QuantitySelector.tsx",
+          "frontend/src/pages/ProductDetailPage.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/components/ProductCard.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Implement shopping cart functionality allowing users to add products, adjust quantities, and view cart total",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/hooks/useCart.ts",
+          "frontend/src/components/CartItem.tsx",
+          "frontend/src/pages/CartPage.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/pages/ProductDetailPage.tsx",
+          "frontend/src/components/CartBadge.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/CartItem.tsx",
+          "frontend/src/pages/CartPage.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/pages/ProductDetailPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Create order management system in backend to store orders with customer information, ordered items, quantities, total amount, and order status",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Build checkout flow allowing users to review cart, enter shipping information, and place orders",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/hooks/useCheckout.ts",
+          "frontend/src/components/ShippingForm.tsx",
+          "frontend/src/pages/CheckoutPage.tsx",
+          "frontend/src/pages/OrderConfirmationPage.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/pages/CartPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ShippingForm.tsx",
+          "frontend/src/pages/CheckoutPage.tsx",
+          "frontend/src/pages/OrderConfirmationPage.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/pages/CartPage.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/authorization/MixinAuthorization.mo",
+    "backend/authorization/access-control.mo",
+    "backend/blob-storage/Mixin.mo",
+    "backend/blob-storage/Storage.mo",
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/canister.yaml",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/cart-icon.dim_128x128.png",
+    "frontend/public/assets/generated/hero-banner.dim_1200x400.png",
+    "frontend/public/assets/generated/order-success.dim_128x128.png",
+    "frontend/public/assets/generated/product-headphones.dim_400x400.png",
+    "frontend/public/assets/generated/product-laptop.dim_400x400.png",
+    "frontend/public/assets/generated/product-phone.dim_400x400.png",
+    "frontend/public/assets/generated/product-watch.dim_400x400.png",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/CartItem.tsx",
+    "frontend/src/components/CategoryFilter.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Header.tsx",
+    "frontend/src/components/OrderCard.tsx",
+    "frontend/src/components/OrderStatusBadge.tsx",
+    "frontend/src/components/ProductCard.tsx",
+    "frontend/src/components/ProductImage.tsx",
+    "frontend/src/components/ProfileSetupModal.tsx",
+    "frontend/src/components/QuantitySelector.tsx",
+    "frontend/src/components/SearchBar.tsx",
+    "frontend/src/components/ShippingForm.tsx",
+    "frontend/src/components/StockIndicator.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/CartPage.tsx",
+    "frontend/src/pages/CheckoutPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/InventoryDashboardPage.tsx",
+    "frontend/src/pages/OrderConfirmationPage.tsx",
+    "frontend/src/pages/OrderDetailPage.tsx",
+    "frontend/src/pages/OrderHistoryPage.tsx",
+    "frontend/src/pages/ProductCatalogPage.tsx",
+    "frontend/src/pages/ProductDetailPage.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/src/utils/imageHelpers.ts",
+    "frontend/src/utils/urlParams.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

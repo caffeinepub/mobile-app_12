@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "E-commerce application for resellers",
+  "architectural_notes": [
+    "Mobile application platform",
+    "E-commerce functionality for reseller market"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Modern e-commerce hero banner showing shopping concept with clean geometric shapes (hero-banner.dim_1200x400.png)\n- Sample product image for electronics category - smartphone (product-phone.dim_400x400.png)\n- Sample product image for electronics category - laptop (product-laptop.dim_400x400.png)\n- Sample product image for accessories category - headphones (product-headphones.dim_400x400.png)\n- Sample product image for accessories category - smartwatch (product-watch.dim_400x400.png)\n- Shopping cart icon illustration in minimalist style (cart-icon.dim_128x128.png)\n- Order confirmation checkmark icon (order-success.dim_128x128.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-mobile-first-responsive-web-application-with-touch-optimized-interface-suitable-for-smartphones-and-tablets",
+      "title": "Create a mobile-first responsive web application with touch-optimized interface suitable for smartphones and tablets",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-mobile-friendly-navigation-pattern-hamburger-menu-or-bottom-navigation-bar-for-primary-app-navigation",
+      "title": "Implement mobile-friendly navigation pattern (hamburger menu or bottom navigation bar) for primary app navigation",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-coherent-visual-theme-with-vibrant-colors-modern-typography-and-clean-mobile-optimized-layouts-that-provide-an-engaging-app-like-experience",
+      "title": "Design a coherent visual theme with vibrant colors, modern typography, and clean mobile-optimized layouts that provide an engaging app-like experience",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-product-catalog-page-displaying-products-with-images-names-prices-and-stock-status-in-a-mobile-optimized-grid-layout",
+      "title": "Create a product catalog page displaying products with images, names, prices, and stock status in a mobile-optimized grid layout",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-product-detail-page-showing-full-product-information-larger-image-description-and-quantity-selector",
+      "title": "Create product detail page showing full product information, larger image, description, and quantity selector",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-shopping-cart-functionality-allowing-users-to-add-products-adjust-quantities-and-view-cart-total",
+      "title": "Implement shopping cart functionality allowing users to add products, adjust quantities, and view cart total",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-checkout-flow-allowing-users-to-review-cart-enter-shipping-information-and-place-orders",
+      "title": "Build checkout flow allowing users to review cart, enter shipping information, and place orders",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-order-history-page-displaying-past-orders-with-order-details-status-and-items-purchased",
+      "title": "Create order history page displaying past orders with order details, status, and items purchased",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-product-search-and-category-filtering-to-help-users-find-products-quickly",
+      "title": "Implement product search and category filtering to help users find products quickly",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-inventory-management-capability-for-resellers-to-track-stock-levels-and-receive-low-stock-alerts",
+      "title": "Add inventory management capability for resellers to track stock levels and receive low-stock alerts",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-generated-product-images-as-static-assets-in-the-frontend-public-directory",
+      "title": "Render generated product images as static assets in the frontend public directory",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-2",
+      "summary": "Implement backend data model for products including id, name, description, price, stock quantity, category, and image reference",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Create order management system in backend to store orders with customer information, ordered items, quantities, total amount, and order status",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Mobile App",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
